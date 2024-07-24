@@ -12,31 +12,34 @@
 
 <body>
   <header>
-    <div class="navbar d-flex ">
-      <div class="logo d-flex align-items-center">
-        <img src="/assets/img/svg/nav-logo.svg" alt="LOGo">
-        <h2 class="logo  ">Events<span class="app">Free</span></h2>
+    <div class="container">
+      <div class="navbar d-flex ">
+        <div class="logo d-flex align-items-center">
+          <img class="earth" src="/assets/img/svg/nav-logo.svg" alt="LOGo">
+          <h2 class="pb-1 logo">Events<span class="app">Free</span></h2>
+        </div>
+        <input type="checkbox" id="menubar" hidden>
+        <label for="menubar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class=" d-flex  navbar-items gap-30  list-unstyled">
+          <li class="navlist "><a class="text-black text-decoration-none op-hove " id="Proudct" href="#">Home</a></li>
+          <li class="navlist "><a class="text-black text-decoration-none op-hover" href="#">Events</a></li>
+          <li class="navlist "><a class="text-black text-decoration-none op-hover" href="#">FEED</a></li>
+          <li class="navlist "><a class="text-black text-decoration-none op-hover" href="#">USER NAME</a></li>
+          <li class="list-unstyled"><button class="Log-out text-white  bg-blue">LogOut</button></li>
+        </ul>
       </div>
-      <input type="checkbox" id="menubar" hidden>
-      <label for="menubar">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class=" d-flex  navbar-items gap-30  list-unstyled">
-        <li class="navlist "><a class="text-black text-decoration-none op-hove " id="Proudct" href="#">Home</a></li>
-        <li class="navlist "><a class="text-black text-decoration-none op-hover" href="#">Events</a></li>
-        <li class="navlist "><a class="text-black text-decoration-none op-hover" href="#">FEED</a></li>
-        <li class="navlist "><a class="text-black text-decoration-none op-hover" href="#">USER NAME</a></li>
-        <li class="list-unstyled"><button class="Log-out text-white  bg-blue">LogOut</button></li>
-      </ul>
     </div>
   </header>
   <section>
-    <div class="container">
+    <div class="container mt-5 ">
       <div class="row">
 
-        <div class="col-lg-4 col-12  col-no-1"><img class=" mt-3 w-100 " src="/assets/img/png/top img.png" alt="top-img">
+        <div class="col-lg-4 col-12  col-no-1"><img class=" mt-3 w-100 " src="/assets/img/png/top img.png"
+            alt="top-img">
         </div>
         <div class="col-lg-8 col-12">
           <p class="clr-6 mt-4 font-pop home "> Home > Username</p>
@@ -112,7 +115,7 @@
                 <p class="clr-6"> Post event name</p>
               </div>
             </div>
-            <h3 class="mt-2">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
+            <h3 class="pt-4 pb-2 heading-f">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
             <div class="svg gap-1 clr-6 d-flex "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -134,7 +137,7 @@
               Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.</div>
 
 
-            <div class="svg-heart gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="svg-heart mt-1 gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
@@ -183,10 +186,10 @@
           </div>
         </div>
         <div class=" mt-4 justify-content-between  flex-column flex-md-row d-flex bor-der align-item-center">
-          <div class="d-flex">
-            <img  class="" src="assets/img/svg/lady.svg" alt="logo">
-            <input class="ml-21 border-radius-10 w-100 input-new ps-2 input-font" type="text" name="" placeholder="Add a new comment"
-              id="">
+          <div class="d-flex w-100">
+            <img class="" src="assets/img/svg/lady.svg" alt="logo">
+            <input class="ml-21 border-radius-10 w-100 input-new ps-2 input-font" type="text" name=""
+              placeholder="Add a new comment" id="">
           </div>
           <div class="button-main">
             <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -239,40 +242,64 @@
           <div class="image1">
             <img src="/assets/img/SVG/comment-1.svg" alt="user1">
           </div>
-          <div class="box2">
-            <h6 class="font-pop pd-10 ">Username</h6>
+          <div class="box2 ms-3">
+            <h6 class="font-pop pt-2 pd-10 ">Username</h6>
             <p class="font-pop clr-6 para3">Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.
               Senectus gravida sed interdum
               pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit.
               Ut vitae dolor fringilla urna eget aliquet.</p>
           </div>
+        </div>
+        <div class="svg ms-5 gap-2 d-flex ps-5 ">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.5 5C19.5 5.24493 19.41 5.48134 19.2473 5.66437C19.0845 5.84741 18.8603 5.96434 18.617 5.993L18.5 6H17.655L16.424 18.52C16.357 19.1994 16.0397 19.8295 15.5338 20.2879C15.0279 20.7462 14.3697 21.0001 13.687 21H6.313C5.63035 21.0001 4.97207 20.7462 4.4662 20.2879C3.96033 19.8295 3.64302 19.1994 3.576 18.52L2.345 6H1.5C1.23478 6 0.98043 5.89464 0.792893 5.70711C0.605357 5.51957 0.5 5.26522 0.5 5C0.5 4.73478 0.605357 4.48043 0.792893 4.29289C0.98043 4.10536 1.23478 4 1.5 4H6.5C6.5 3.54037 6.59053 3.08525 6.76642 2.66061C6.94231 2.23597 7.20012 1.85013 7.52513 1.52513C7.85013 1.20012 8.23597 0.942313 8.66061 0.766422C9.08525 0.59053 9.54037 0.5 10 0.5C10.4596 0.5 10.9148 0.59053 11.3394 0.766422C11.764 0.942313 12.1499 1.20012 12.4749 1.52513C12.7999 1.85013 13.0577 2.23597 13.2336 2.66061C13.4095 3.08525 13.5 3.54037 13.5 4H18.5C18.7652 4 19.0196 4.10536 19.2071 4.29289C19.3946 4.48043 19.5 4.73478 19.5 5ZM12.25 8.25C12.0688 8.25001 11.8937 8.31564 11.7571 8.43477C11.6205 8.55389 11.5316 8.71845 11.507 8.898L11.5 9V16L11.507 16.102C11.5317 16.2815 11.6206 16.446 11.7571 16.5651C11.8937 16.6842 12.0688 16.7498 12.25 16.7498C12.4312 16.7498 12.6063 16.6842 12.7429 16.5651C12.8794 16.446 12.9683 16.2815 12.993 16.102L13 16V9L12.993 8.898C12.9684 8.71845 12.8795 8.55389 12.7429 8.43477C12.6063 8.31564 12.4312 8.25001 12.25 8.25ZM7.75 8.25C7.56876 8.25001 7.39366 8.31564 7.25707 8.43477C7.12048 8.55389 7.03165 8.71845 7.007 8.898L7 9V16L7.007 16.102C7.0317 16.2815 7.12055 16.446 7.25714 16.5651C7.39372 16.6842 7.5688 16.7498 7.75 16.7498C7.9312 16.7498 8.10628 16.6842 8.24286 16.5651C8.37945 16.446 8.4683 16.2815 8.493 16.102L8.5 16V9L8.493 8.898C8.46835 8.71845 8.37952 8.55389 8.24293 8.43477C8.10634 8.31564 7.93124 8.25001 7.75 8.25ZM10 2.5C9.60218 2.5 9.22064 2.65804 8.93934 2.93934C8.65804 3.22064 8.5 3.60218 8.5 4H11.5C11.5 3.60218 11.342 3.22064 11.0607 2.93934C10.7794 2.65804 10.3978 2.5 10 2.5Z"
+              fill="black" />
+          </svg>
+          <p class="font-pop remove clr-6">Remove Comment</p>
         </div>
         <div class="coment1 pb-2">
           <div class="image1">
             <img src="/assets/img/SVG/comment-2.svg" alt="user1">
           </div>
-          <div class="box2">
-            <h6 class="font-pop pd-10 ">Username</h6>
+          <div class="box2 ms-3">
+            <h6 class="font-pop pt-2 pd-10 ">Username</h6>
             <p class="font-pop clr-6 para3">Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.
               Senectus gravida sed interdum
               pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit.
               Ut vitae dolor fringilla urna eget aliquet.</p>
           </div>
+        </div>
+        <div class="svg ms-5 gap-2 d-flex ps-5 ">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.5 5C19.5 5.24493 19.41 5.48134 19.2473 5.66437C19.0845 5.84741 18.8603 5.96434 18.617 5.993L18.5 6H17.655L16.424 18.52C16.357 19.1994 16.0397 19.8295 15.5338 20.2879C15.0279 20.7462 14.3697 21.0001 13.687 21H6.313C5.63035 21.0001 4.97207 20.7462 4.4662 20.2879C3.96033 19.8295 3.64302 19.1994 3.576 18.52L2.345 6H1.5C1.23478 6 0.98043 5.89464 0.792893 5.70711C0.605357 5.51957 0.5 5.26522 0.5 5C0.5 4.73478 0.605357 4.48043 0.792893 4.29289C0.98043 4.10536 1.23478 4 1.5 4H6.5C6.5 3.54037 6.59053 3.08525 6.76642 2.66061C6.94231 2.23597 7.20012 1.85013 7.52513 1.52513C7.85013 1.20012 8.23597 0.942313 8.66061 0.766422C9.08525 0.59053 9.54037 0.5 10 0.5C10.4596 0.5 10.9148 0.59053 11.3394 0.766422C11.764 0.942313 12.1499 1.20012 12.4749 1.52513C12.7999 1.85013 13.0577 2.23597 13.2336 2.66061C13.4095 3.08525 13.5 3.54037 13.5 4H18.5C18.7652 4 19.0196 4.10536 19.2071 4.29289C19.3946 4.48043 19.5 4.73478 19.5 5ZM12.25 8.25C12.0688 8.25001 11.8937 8.31564 11.7571 8.43477C11.6205 8.55389 11.5316 8.71845 11.507 8.898L11.5 9V16L11.507 16.102C11.5317 16.2815 11.6206 16.446 11.7571 16.5651C11.8937 16.6842 12.0688 16.7498 12.25 16.7498C12.4312 16.7498 12.6063 16.6842 12.7429 16.5651C12.8794 16.446 12.9683 16.2815 12.993 16.102L13 16V9L12.993 8.898C12.9684 8.71845 12.8795 8.55389 12.7429 8.43477C12.6063 8.31564 12.4312 8.25001 12.25 8.25ZM7.75 8.25C7.56876 8.25001 7.39366 8.31564 7.25707 8.43477C7.12048 8.55389 7.03165 8.71845 7.007 8.898L7 9V16L7.007 16.102C7.0317 16.2815 7.12055 16.446 7.25714 16.5651C7.39372 16.6842 7.5688 16.7498 7.75 16.7498C7.9312 16.7498 8.10628 16.6842 8.24286 16.5651C8.37945 16.446 8.4683 16.2815 8.493 16.102L8.5 16V9L8.493 8.898C8.46835 8.71845 8.37952 8.55389 8.24293 8.43477C8.10634 8.31564 7.93124 8.25001 7.75 8.25ZM10 2.5C9.60218 2.5 9.22064 2.65804 8.93934 2.93934C8.65804 3.22064 8.5 3.60218 8.5 4H11.5C11.5 3.60218 11.342 3.22064 11.0607 2.93934C10.7794 2.65804 10.3978 2.5 10 2.5Z"
+              fill="black" />
+          </svg>
+          <p class="font-pop remove clr-6">Remove Comment</p>
         </div>
         <div class="coment1 pb-2">
           <div class="image1">
             <img src="/assets/img/svg/comment-3.png" alt="user1">
           </div>
-          <div class="box2">
-            <h6 class="font-pop pd-10 ">Username</h6>
+          <div class="box2 ms-3">
+            <h6 class="font-pop pt-2 pd-10 ">Username</h6>
             <p class="font-pop clr-6 para3">Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.
               Senectus gravida sed interdum
               pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit.
               Ut vitae dolor fringilla urna eget aliquet.</p>
           </div>
         </div>
+        <div class="svg ms-5 gap-2 d-flex ps-5 ">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.5 5C19.5 5.24493 19.41 5.48134 19.2473 5.66437C19.0845 5.84741 18.8603 5.96434 18.617 5.993L18.5 6H17.655L16.424 18.52C16.357 19.1994 16.0397 19.8295 15.5338 20.2879C15.0279 20.7462 14.3697 21.0001 13.687 21H6.313C5.63035 21.0001 4.97207 20.7462 4.4662 20.2879C3.96033 19.8295 3.64302 19.1994 3.576 18.52L2.345 6H1.5C1.23478 6 0.98043 5.89464 0.792893 5.70711C0.605357 5.51957 0.5 5.26522 0.5 5C0.5 4.73478 0.605357 4.48043 0.792893 4.29289C0.98043 4.10536 1.23478 4 1.5 4H6.5C6.5 3.54037 6.59053 3.08525 6.76642 2.66061C6.94231 2.23597 7.20012 1.85013 7.52513 1.52513C7.85013 1.20012 8.23597 0.942313 8.66061 0.766422C9.08525 0.59053 9.54037 0.5 10 0.5C10.4596 0.5 10.9148 0.59053 11.3394 0.766422C11.764 0.942313 12.1499 1.20012 12.4749 1.52513C12.7999 1.85013 13.0577 2.23597 13.2336 2.66061C13.4095 3.08525 13.5 3.54037 13.5 4H18.5C18.7652 4 19.0196 4.10536 19.2071 4.29289C19.3946 4.48043 19.5 4.73478 19.5 5ZM12.25 8.25C12.0688 8.25001 11.8937 8.31564 11.7571 8.43477C11.6205 8.55389 11.5316 8.71845 11.507 8.898L11.5 9V16L11.507 16.102C11.5317 16.2815 11.6206 16.446 11.7571 16.5651C11.8937 16.6842 12.0688 16.7498 12.25 16.7498C12.4312 16.7498 12.6063 16.6842 12.7429 16.5651C12.8794 16.446 12.9683 16.2815 12.993 16.102L13 16V9L12.993 8.898C12.9684 8.71845 12.8795 8.55389 12.7429 8.43477C12.6063 8.31564 12.4312 8.25001 12.25 8.25ZM7.75 8.25C7.56876 8.25001 7.39366 8.31564 7.25707 8.43477C7.12048 8.55389 7.03165 8.71845 7.007 8.898L7 9V16L7.007 16.102C7.0317 16.2815 7.12055 16.446 7.25714 16.5651C7.39372 16.6842 7.5688 16.7498 7.75 16.7498C7.9312 16.7498 8.10628 16.6842 8.24286 16.5651C8.37945 16.446 8.4683 16.2815 8.493 16.102L8.5 16V9L8.493 8.898C8.46835 8.71845 8.37952 8.55389 8.24293 8.43477C8.10634 8.31564 7.93124 8.25001 7.75 8.25ZM10 2.5C9.60218 2.5 9.22064 2.65804 8.93934 2.93934C8.65804 3.22064 8.5 3.60218 8.5 4H11.5C11.5 3.60218 11.342 3.22064 11.0607 2.93934C10.7794 2.65804 10.3978 2.5 10 2.5Z"
+              fill="black" />
+          </svg>
+          <p class="font-pop  remove clr-6">Remove Comment</p>
+        </div>
       </div>
-      <div class="box-user m-4 p-4 pt-5">
+      <div class="box-user mt-4 p-4 pt-5">
         <div class="d-flex row">
           <div class="col-lg-6 col-12 ">
             <div class="gap-2 d-flex">
@@ -282,7 +309,7 @@
                 <p class="clr-6"> Post event name</p>
               </div>
             </div>
-            <h3 class="mt-2">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
+            <h3 class="pt-4 pb-2 heading-f">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
             <div class="svg gap-1 clr-6 d-flex "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -304,7 +331,7 @@
               Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.</div>
 
 
-            <div class="svg-heart gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="svg-heart mt-2 gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
@@ -353,7 +380,7 @@
           </div>
         </div>
       </div>
-      <div class="box-user m-4 p-4 pt-5">
+      <div class="box-user mt-4 p-4 pt-5">
         <div class="d-flex row">
           <div class="col-lg-6 col-12 ">
             <div class="gap-2 d-flex">
@@ -363,7 +390,7 @@
                 <p class="clr-6"> Post event name</p>
               </div>
             </div>
-            <h3 class="mt-2">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
+            <h3 class="pt-4 pb-2 heading-f">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
             <div class="svg gap-1 clr-6 d-flex "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -385,7 +412,7 @@
               Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.</div>
 
 
-            <div class="svg-heart gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="svg-heart mt-2 gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
@@ -434,7 +461,7 @@
           </div>
         </div>
       </div>
-      <div class="box-user m-4 p-4 pt-5">
+      <div class="box-user mt-4 p-4 pt-5">
         <div class="d-flex row">
           <div class="col-lg-6 col-12 ">
             <div class="gap-2 d-flex">
@@ -444,7 +471,7 @@
                 <p class="clr-6"> Post event name</p>
               </div>
             </div>
-            <h3 class="mt-2">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
+            <h3 class="pt-4 pb-2 heading-f">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
             <div class="svg gap-1 clr-6 d-flex "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -466,7 +493,7 @@
               Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.</div>
 
 
-            <div class="svg-heart gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="svg-heart mt-2 gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
@@ -515,7 +542,7 @@
           </div>
         </div>
       </div>
-      <div class="box-user m-4 p-4 pt-5">
+      <div class="box-user mt-4 p-4 pt-5">
         <div class="d-flex row">
           <div class="col-lg-6 col-12 ">
             <div class="gap-2 d-flex">
@@ -525,7 +552,7 @@
                 <p class="clr-6"> Post event name</p>
               </div>
             </div>
-            <h3 class="mt-2">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
+            <h3 class="pt-4 pb-2 heading-f">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
             <div class="svg gap-1 clr-6 d-flex "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -547,7 +574,7 @@
               Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.</div>
 
 
-            <div class="svg-heart gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="svg-heart mt-2 gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
@@ -596,7 +623,7 @@
           </div>
         </div>
       </div>
-      <div class="box-user m-4 p-4 pt-5">
+      <div class="box-user mt-4 p-4 mb-5 pt-5">
         <div class="d-flex row">
           <div class="col-lg-6 col-12 ">
             <div class="gap-2 d-flex">
@@ -606,7 +633,7 @@
                 <p class="clr-6"> Post event name</p>
               </div>
             </div>
-            <h3 class="mt-2">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
+            <h3 class="pt-4 pb-2 heading-f">Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.</h3>
             <div class="svg gap-1 clr-6 d-flex "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6">
@@ -628,7 +655,7 @@
               Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.</div>
 
 
-            <div class="svg-heart gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="svg-heart mt-2 gap-2 d-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
@@ -684,11 +711,12 @@
       <div class="row">
         <div class="col-lg-5 col-md-12">
           <div class="d-flex flex-column ">
-            <div class="logo d-flex align-items-center mb-3 mt-4">
-              <img src="/assets/img/SVG/nav-logo.svg" alt="logo">
+            <div class="logo pt-1 d-flex align-items-center mb-3 mt-4">
+              <img class="earth" src="/assets/img/SVG/nav-logo.svg" alt="logo">
               <h2 class="logo  ">Events<span class="app">Free</span></h2>
             </div>
-            <p class="lorem-footer text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur
+            <p class="lorem-footer pt-3 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              efficitur
               urna in dictum suscipit. Suspendisse maximus ipsum sem. c </p>
             <div class="svg-s-footer d-flex gap-3">
               <a class="svg-logos" href="https://www.instagram.com/">
@@ -731,7 +759,7 @@
         <div class="col-lg-7 col-md-12">
           <div class="row">
             <div class="col-6 col-sm-3 ">
-              <ul class="list-unstyled text-decoration-none mt126 gap12">
+              <ul class="list-unstyled  text-decoration-none mt126 gap12">
                 <li class="head-li mb-2 mt-5">SERVICES</li>
                 <li class="content-li text-white mb-2"> <a href="#">About</a></li>
                 <li class="content-li text-white mb-2"> <a href="#">News</a></li>
@@ -741,11 +769,11 @@
             </div>
             <div class="col-6 col-sm-3">
               <ul class="list-unstyled text-decoration-none mt126 gap12">
-                <li class="head-li mb-2 mt-5">EVENTS</li>
-                <li class="content-li mb-2"> <a href="#">ullamcorper</a></li>
-                <li class="content-li mb-2"> <a href="#">ullamcorper</a></li>
-                <li class="content-li mb-2"> <a href="#">ullamcorper</a></li>
-                <li class="content-li mb-2"> <a href="#">ullamcorper</a></li>
+                <li class="head-li2 mb-2 mt-5">EVENTS</li>
+                <li class="content-li2 mb-2"> <a href="#">ullamcorper</a></li>
+                <li class="content-li2 mb-2"> <a href="#">ullamcorper</a></li>
+                <li class="content-li2 mb-2"> <a href="#">ullamcorper</a></li>
+                <li class="content-li2 mb-2"> <a href="#">ullamcorper</a></li>
               </ul>
             </div>
             <div class="col-l2  col-sm-6">
